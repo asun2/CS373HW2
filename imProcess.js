@@ -185,6 +185,7 @@ function loadMosaicImages() {
 			for(let x=0; x<montage.width; x+=w, i++) {
 				let new_image = createImage(w, h);
 				new_image.copy(montage, x, y, w, h, 0, 0, w, h);
+				new_image.loadPixels();
 				mosaics[mosaic_name].push(new_image);
 
 				if(i >= nimgs) break;
