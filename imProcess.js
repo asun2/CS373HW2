@@ -18,7 +18,7 @@ let input = null;
 let output = null;
 
 let mosaic_names =    ['musicBig', 'musicSmall', 'movieBig', 'movieSmall'];
-let mosaic_files =    ['musicBig.png', 'musicSmall.png', 'movieBig.png', 'movieSmall.png'];
+let mosaic_files =    ['https://raw.githubusercontent.com/cmpsci373/CS373HW2/master/musicBig.png', 'https://raw.githubusercontent.com/cmpsci373/CS373HW2/master/musicSmall.png', 'https://raw.githubusercontent.com/cmpsci373/CS373HW2/master/movieBig.png', 'https://raw.githubusercontent.com/cmpsci373/CS373HW2/master/movieSmall.png'];
 let mosaic_img_size = [[24, 24], [12, 12,], [24, 45], [12, 23]];
 let mosaic_nimages =  [599, 599, 951, 951];
 let mosaic_montages = [];
@@ -198,7 +198,7 @@ function loadMosaicImages() {
 // Load input images
 function loadInputImages() {
 	for(let i=0; i<input_image_names.length; i++ ) {
-		input_images[input_image_names[i]] = loadImage('sample_images/'+input_image_names[i]);
+		input_images[input_image_names[i]] = loadImage('https://raw.githubusercontent.com/cmpsci373/CS373HW2/master/sample_images/'+input_image_names[i]);
 	}
 }
 // Apply brightness, contrast, saturation adjustments
